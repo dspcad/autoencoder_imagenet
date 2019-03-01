@@ -53,13 +53,7 @@ def read_10_classes_from_imagenet():
     random.shuffle(c)
     data, label = zip(*c)
 
-    np.save("input_data.npy", data)
-    np.save("input_label.npy", label)
+    return data, label
 
 
-#a = np.load("input_label.npy")
-#b = np.load("input_data.npy")
-#print (a)
-#cv2.imwrite("test.jpg",b[0])
-#cv2.imwrite("test1.jpg",b[1])
-read_10_classes_from_imagenet()
+
